@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo-container">
+        <a href="landing.html"><img src="img/moon-logo.png" alt="Moon Logo" id="header-img"></a>
+      </div>
+      <nav id="nav-bar">
+        <ul class="nav-list">
+          <li class="nav-list__item"><a href="#" class="nav-list__link">Info</a></li>
+          <li class="nav-list__item"><a href="#" class="nav-list__link">Ship</a></li>
+          <li class="nav-list__item"><a href="#" class="nav-list__link">Packs</a></li>
+        </ul>
+      </nav>
+      <!-- Navigation Burger -->
+      <div class="nav-burger">
+        <div class="nav-burger-line"></div>
+      </div>
+    </header>
+    <main class="wrapper">
+      <h1 class="title">Space Tours</h1>
+      <div class="video-container"></div>
+        <video id="video" width="100%" autoplay muted loop>
+          <source src="img/earth-video.mp4" type="video/mp4">
+          <source src="img/earth-video.ogg" type="video/mp4">
+            Your browser does not support the video tag. 
+        </video> 
+      </div>
+
+      <div class="travel">
+        <div class="travel__info">
+          <h2 class="heading-secondary">Travel information</h2>
+          <div class="travel__details">
+            <p class="travel__detail">First guided travels in space</p>
+            <p class="travel__detail">See our home like never before</p>
+            <p class="travel__detail">Visit your lovely moon</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ship">
+        <div class="ship__details">
+          <h2 class="heading-secondary">Mothership</h2>
+          <p class="ship__detail">Most advance technology</p>
+          <p class="ship__detail">New era in space explorations</p>
+        </div>
+      </div>
+
+      <div class="packs">
+        <h2 class="heading-secondary">Packs</h2>
+        <div class="packs__container">
+          <div class="packs__pack">
+            <h3 class="packs__heading">New Experience</h3>
+            <p class="packs__info">Tour around Earth</p>
+            <div class="packs__price">5 &#8383;</div>
+          </div>
+          <div class="packs__pack">
+            <h3 class="packs__heading">Super Experience</h3>
+            <p class="packs__info">See Earth and Moon</p>
+            <div class="packs__price">10 &#8383;</div>
+          </div>
+          <div class="packs__pack">
+            <h3 class="packs__heading">Full Experience</h3>
+            <p class="packs__info">All tours + Round to Mars</p>
+            <div class="packs__price">20 &#8383;</div>
+          </div>
+        </div>
+      </div>
+
+      <form action="https://www.freecodecamp.com/email-submit" id="form" class="form">
+        <h2 class="heading-secondary">Start choosing a pack</h2>
+        <div class="form__container">
+          <label for="email" id="email-label" class="form__label-text">Email</label>
+          <input type="email" id="email" class="form__insert-info" name="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="form__container">
+          <label for="dropdown" class="form__label-text">Choose desired pack</label>
+          <select name="dropdown" id="dropdown" class="form__insert-info">
+            <option value="new-experience">New Experience</option>
+            <option value="super-experience">Super Experience</option>
+            <option value="full-experience">Full Experience</option>
+          </select>
+        </div>
+
+        <div class="form__container">
+          <input type="submit" id="submit">
+        </div>
+      </form>
+
+      <div class="copyright">Mandela Samboy. June 2020</div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
