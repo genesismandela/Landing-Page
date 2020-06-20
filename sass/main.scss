@@ -207,6 +207,8 @@ body {
     background-size: cover;
     background-attachment: fixed;
 
+    -webkit-overflow-scrolling: touch;
+
     .heading-secondary {
       align-self: flex-end;
       text-align: right;
