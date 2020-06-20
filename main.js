@@ -18,6 +18,11 @@ document.querySelector('.nav-burger').addEventListener('click', function() {
   document.querySelector('.logo-container').style.display = 'none';
 });
 
+var rightgear = document.getElementById("header-img");
+    
+window.addEventListener("scroll", function() {
+    rightgear.style.transform = "rotate(-"+window.pageYOffset+"deg)";
+});
 
 
 
