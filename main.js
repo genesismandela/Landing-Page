@@ -12,11 +12,22 @@ menuBtn.addEventListener('click', () => {
 
 // Listen for click events
 document.querySelector('.nav-burger').addEventListener('click', function() {
+  var navShowHide = document.getElementById('nav-bar');
+  if (navShowHide.style.display === 'block') {
+    navShowHide.style.display = 'none';
+  } else {
+    navShowHide.style.display = 'block';
+  }
 
-  document.getElementById('nav-bar').style.display = 'block';
-
-  document.querySelector('.logo-container').style.display = 'none';
+  var logoShowHide = document.querySelector('.logo-container');
+  if (navShowHide.style.display === 'block') {
+    logoShowHide.style.display = 'none';
+  } else {
+    logoShowHide.style.display = 'flex';
+  }
 });
+
+
 
 var rightgear = document.getElementById("header-img");
     

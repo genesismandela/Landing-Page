@@ -1,0 +1,30 @@
+// Root
+:root {
+  --color-primary: rgb(219, 179, 0);
+  --color-secondary: rgb(39, 39, 39);
+  --color-primary-transparent: rgba(219, 179, 0, 0.2);
+  --color-secondary-transparent: rgba(39, 39, 39, 0.75);
+  --color-light: rgb(207, 207, 207);
+  --color-light-transparent: rgb(207, 207, 207, 0.3);
+}
+
+// Browser Resets
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans Condensed', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+
+  background-color: black;
+  color: var(--color-light);
+}
