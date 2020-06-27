@@ -63,6 +63,7 @@
   }
 
   &__detail {
+    color: var(--color-primary);
     margin: 3rem 0 3rem 4rem;
     text-shadow: 1px 1px white;
 
@@ -79,11 +80,11 @@
 }
 
 .heading-secondary {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 400;
   letter-spacing: 1.4;
 
-  color: var(--color-secondary);
+  color: var(--color-light);
   text-shadow: 1px 1px var(--color-primary);
   padding: 1.5rem;
 }
@@ -129,6 +130,7 @@
   }
 
   &__detail {
+    color: var(--color-primary);
     margin: 3rem 4rem 3rem 0rem;
     text-shadow: 1px 1px white;
 
@@ -161,6 +163,10 @@
   padding: 10rem 1.5rem;
 
   width: 100%;
+
+  .heading-secondary {
+    color: var(--color-secondary);
+  }
 
   &__container {
     display: flex;

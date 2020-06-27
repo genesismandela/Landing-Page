@@ -1,7 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Responsive website created from FreeCodeCamp challenge">
+    <meta name="keywords" content="html, css, sass, layout, flexbox">
+    <!-- Title -->
+    <title>Genesis Mandela | Landing Page</title>
+    <!-- Style -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- Font -->
+    <link rel="stylesheet" href="Galaxy.otf">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159180375-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-159180375-1');
+    </script>
   </head>
   <body>
     <header id="header">
@@ -65,27 +87,32 @@
             <h3 class="packs__heading">Explorer</h3>
             <p class="packs__info">Travel alive without leaving home</p>
             <p class="packs__info">Round the Earth from the orbit</p>
-            <div class="packs__price">5 &#8383;</div>
+            <div class="packs__price">Book now</div>
           </div>
           <div class="packs__pack">
             <img class="packs__img" src="img/moon.png" alt="Moon Tour">
             <h3 class="packs__heading">Enthusiastic</h3>
             <p class="packs__info">Explore the moon settlements</p>
             <p class="packs__info">Unforgettable experience</p>
-            <div class="packs__price">10 &#8383;</div>
+            <div class="packs__price">Book now</div>
           </div>
           <div class="packs__pack">
             <img class="packs__img" src="img/mars.png" alt="Mars Tour">
             <h3 class="packs__heading">Passionate</h3>
-            <p class="packs__info">Leave our home behind to see Mars</p>
+            <p class="packs__info">Leave Earth behind to see Mars</p>
             <p class="packs__info">Most fastinating views in space</p>
-            <div class="packs__price">20 &#8383;</div>
+            <div class="packs__price">Book now</div>
           </div>
         </div>
       </div>
 
-      <form action="https://www.freecodecamp.com/email-submit" id="form" class="form">
+      <form action="#" id="form" class="form">
         <h2 class="heading-secondary">Start choosing a pack</h2>
+        <div class="form__container">
+          <label for="name" id="name-label" class="form__label-text">Full name</label>
+          <input type="name" id="name" class="form__insert-info" name="name" placeholder="Enter your name" required>
+        </div>
+
         <div class="form__container">
           <label for="email" id="email-label" class="form__label-text">Email</label>
           <input type="email" id="email" class="form__insert-info" name="email" placeholder="Enter your email" required>
@@ -94,9 +121,9 @@
         <div class="form__container">
           <label for="dropdown" class="form__label-text">Choose desired pack</label>
           <select name="dropdown" id="dropdown" class="form__insert-info">
-            <option value="new-experience">New Experience</option>
-            <option value="super-experience">Super Experience</option>
-            <option value="full-experience">Full Experience</option>
+            <option value="exlorer">Explorer</option>
+            <option value="enthusiastic">Enthusiastic</option>
+            <option value="passionate">Passionate</option>
           </select>
         </div>
 
