@@ -69,10 +69,33 @@ body {
   background-image: url(../img/milky-way.jpg);
   background-position: right;
   background-repeat: repeat-y;
+  position: relative;
+}
+
+.travel::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  background: linear-gradient(to top, #000, transparent);
+}
+
+.travel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  background: linear-gradient(to bottom, #000, transparent);
 }
 
 .travel__info {
-  font-size: 2rem;
+  font-size: 1.8rem;
   border-radius: 15px;
   padding: 15rem 0;
   width: 100%;
@@ -82,7 +105,14 @@ body {
   margin-left: 4rem;
 }
 
+@media only screen and (max-width: 350px) {
+  .travel__info .heading-secondary {
+    margin-left: 2rem;
+  }
+}
+
 .travel__detail {
+  font-family: 'Open Sans';
   color: var(--color-primary);
   margin: 3rem 0 3rem 4rem;
   text-shadow: 1px 1px white;
@@ -98,7 +128,7 @@ body {
 }
 
 .heading-secondary {
-  font-size: 5rem;
+  font-size: 4.6rem;
   font-weight: 400;
   letter-spacing: 1.4;
   color: var(--color-light);
@@ -111,14 +141,36 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
-  padding: 10rem 0;
+  padding-top: 10rem;
+  position: relative;
   width: 100%;
+}
+
+.ship::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  background: linear-gradient(to top, var(--color-light), transparent);
+}
+
+.ship::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  background: linear-gradient(to bottom, #000, transparent);
 }
 
 .ship__details {
   display: flex;
-  font-size: 2rem;
-  padding: 3rem 0;
+  font-size: 1.8rem;
   width: 100%;
   height: 100vh;
   background-image: url(../img/rocket-nasa.jpg);
@@ -131,6 +183,12 @@ body {
   margin-right: 4rem;
 }
 
+@media only screen and (max-width: 320px) {
+  .ship__details .heading-secondary {
+    margin-right: 2rem;
+  }
+}
+
 .ship__details-info {
   display: flex;
   flex-direction: column;
@@ -140,6 +198,7 @@ body {
 }
 
 .ship__detail {
+  font-family: 'Open Sans';
   color: var(--color-primary);
   margin: 3rem 4rem 3rem 0rem;
   text-shadow: 1px 1px white;
@@ -162,8 +221,7 @@ body {
   align-items: center;
   background-color: var(--color-light);
   clip-path: ellipse(100% 55% at 48% 44%);
-  margin-top: 2rem;
-  padding: 10rem 1.5rem;
+  padding: 25rem 1.5rem;
   width: 100%;
 }
 
@@ -207,6 +265,11 @@ body {
 .packs__img {
   width: 20rem;
   cursor: pointer;
+  transition: 10s;
+}
+
+.packs__img:hover {
+  transform: rotate(360deg);
 }
 
 .packs__heading {
@@ -221,6 +284,7 @@ body {
 .packs__info {
   font-size: 1.6rem;
   font-weight: 300;
+  font-family: 'Open Sans';
   color: var(--color-primary);
   margin-bottom: 1.5rem;
   text-align: center;
@@ -309,11 +373,49 @@ body {
   padding: 1rem;
 }
 
-.copyright {
+.footer {
+  background-color: var(--color-light);
+  width: 100%;
+  display: flex;
+  padding: 5rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+
+.footer__navigation {
+  flex: 50%;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__item {
   font-size: 2rem;
-  color: var(--color-light);
-  margin: 2rem 0;
-  padding: 1.5rem;
+  padding: 3rem;
+  position: relative;
+}
+
+.footer__item::before {
+  content: " » ";
+  color: var(--color-secondary);
+}
+
+.footer__link {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+.copyright {
+  font-size: 2.2rem;
+  color: var(--color-primary);
+  flex: 50%;
+  padding: 3rem;
   text-align: center;
 }
 
